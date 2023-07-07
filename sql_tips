@@ -19,4 +19,10 @@ so the following payload should return 2. 67-ASCII(‘A’)..
 The preceding test will not work if single quotes are being filtered. 
 However, in this situation you can exploit the fact that databases implicitly convert numeric data to string data where required. Hence, because 
 the ASCII value of the character 1 is 49, the following expression is equivalent to 2 in SQL:
-51-ASCII(1)
+51-ASCII(1).
+
+ A common mistake when probing an application for defects such as SQL 
+injection is to forget that certain characters have special meaning within HTTP 
+requests. If you want to include these characters within your attack payloads, 
+you must be careful to URL-encode them to ensure that they are interpreted in 
+the way you intend. In particular:
