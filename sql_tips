@@ -10,5 +10,4 @@ out for any JavaScript errors occurring when your browser processes the
 returned page. It is fairly common for user-supplied input to be returned 
 within JavaScript, and an unsanitized single quote will cause an error in the 
 JavaScript interpreter, just as it does in the SQL interpreter. The ability to 
-inject arbitrary JavaScript into responses allows cross-site scripting attacks, as 
-described in Chapter 12.
+inject arbitrary JavaScript into responses allows cross-site scripting attacks
