@@ -14,4 +14,9 @@ inject arbitrary JavaScript into responses allows cross-site scripting attacks
 
 
 for numeric parameters (1,2,3,4) try mathematical expressions like 1+1(a vulnerable sql database would return 2).. you can also try ascii characters. the ascii character for "A" is 65, 
-so the following payload should return 2. 67-ASCII(‘A’)
+so the following payload should return 2. 67-ASCII(‘A’)..
+
+The preceding test will not work if single quotes are being filtered. 
+However, in this situation you can exploit the fact that databases implicitly convert numeric data to string data where required. Hence, because 
+the ASCII value of the character 1 is 49, the following expression is equivalent to 2 in SQL:
+51-ASCII(1)
