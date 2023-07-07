@@ -36,3 +36,5 @@ using + or %20.
 n Because + is used to encode spaces, if you want to include an actual +
 in your string, you must encode it using %2b. In the previous numeric 
 example, therefore, 1+1 should be submitted as 1%2b1.
+ The semicolon is used to separate cookie fi elds and should be encoded 
+using %3b.
