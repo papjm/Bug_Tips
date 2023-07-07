@@ -13,5 +13,5 @@ JavaScript interpreter, just as it does in the SQL interpreter. The ability to
 inject arbitrary JavaScript into responses allows cross-site scripting attacks
 
 
-for numeric parameters (1,2,3,4) try mathematical expressions like 1+1(a vulnerable sql database would return 2).. you can also try ascii characters. the ascii character for "A" is 65, so the following
-payload should return 2. 67-ASCII(‘A’)
+for numeric parameters (1,2,3,4) try mathematical expressions like 1+1(a vulnerable sql database would return 2).. you can also try ascii characters. the ascii character for "A" is 65, 
+so the following payload should return 2. 67-ASCII(‘A’)
