@@ -26,3 +26,13 @@ injection is to forget that certain characters have special meaning within HTTP
 requests. If you want to include these characters within your attack payloads, 
 you must be careful to URL-encode them to ensure that they are interpreted in 
 the way you intend. In particular:
+
+& and = are used to join name/value pairs to create the query string and 
+the block of POST data. You should encode them using %26 and %3d,
+respectively.
+n Literal spaces are not allowed in the query string. If they are submitted, 
+they will effectively terminate the entire string. You should encode them 
+using + or %20.
+n Because + is used to encode spaces, if you want to include an actual +
+in your string, you must encode it using %2b. In the previous numeric 
+example, therefore, 1+1 should be submitted as 1%2b1.
