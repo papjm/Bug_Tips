@@ -47,6 +47,15 @@ you can inject:
 ‘ or ‘a’=’a
 
 
+For example, if the SELECT
+keyword is being blocked or removed, you can try the following bypasses:
+SeLeCt
+%00SELECT
+SELSELECTECT
+%53%45%4c%45%43%54
+%2553%2545%254c%2545%2543%255
+
+
 
 -------------------------------------------------------------------------
  payloads from : https://ahmadaabdulla.medium.com/how-i-found-sql-injection-on-8x8-cengage-comodo-automattic-20-company-c296d1a09f63
