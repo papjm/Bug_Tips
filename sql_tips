@@ -38,6 +38,16 @@ in your string, you must encode it using %2b. In the previous numeric
 example, therefore, 1+1 should be submitted as 1%2b1.
  The semicolon is used to separate cookie fi elds and should be encoded 
 using %3b.
+
+If the comment symbol is blocked, you can often craft your injected data 
+such that it does not break the syntax of the surrounding query, even 
+without using this. For example, instead of injecting:
+‘ or 1=1--
+you can inject:
+‘ or ‘a’=’a
+
+
+
 -------------------------------------------------------------------------
  payloads from : https://ahmadaabdulla.medium.com/how-i-found-sql-injection-on-8x8-cengage-comodo-automattic-20-company-c296d1a09f63
 -------------------------------------------------------------------------
