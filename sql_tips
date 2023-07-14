@@ -87,3 +87,11 @@ When i'm hunting for this I'll try to keep an eye out for the “*.firebaseio.co
 see this then you know your target is utilizing Google's firebase DB. An example domain 
 can be found below: 
 ● Vuln-domain.firebaseio.com 
+
+
+If the developer forgot to enable authentication the database will be exposed to the 
+word. You can easily view the database by appending a “/.json” to the url as shown 
+below: 
+● vuln-domain.firebaseio.com/.json
+
+
