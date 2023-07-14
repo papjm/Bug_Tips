@@ -79,3 +79,11 @@ SELSELECTECT
 this payload was used in an hackerone report in the user-agent header, causing the web app to rest for said seconds.
 
 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87'XOR(if(now()=sysdate(),sleep(5*5),0))OR'
+
+
+
+Misconfigured Firebase Database
+When i'm hunting for this I'll try to keep an eye out for the “*.firebaseio.com” url, if you 
+see this then you know your target is utilizing Google's firebase DB. An example domain 
+can be found below: 
+● Vuln-domain.firebaseio.com 
