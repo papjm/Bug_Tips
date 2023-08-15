@@ -2,3 +2,4 @@ javascript url scheme
 data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTIGJ5IFZpY2tpZScpPC9zY3JpcHQ+"
 
 data:text/html,<script>alert('XSS by Vickie')</script>
+ALWAYS TEST BY USING MULTIPLE BROWSERS
